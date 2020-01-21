@@ -1,26 +1,24 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
 Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+void add();
 int main()
 {
-   int a=10,b=5,c;
-   c=a>b;
-   printf(" a is greater than b\n",c);
-    c=a<b;
-     printf("a is less than b\n",c);
-    c=a=b;
-     printf(" a is equal to b\n",c);
-    c=a>=b;
-     printf(" a is greater than or equal to b\n",c);
-    c=a<=b;
-     printf(" a is less than or equal to b\n",c);
-  return 0;
+   add();
+return 0;
+}
+void add()
+{
+    int a,b,c;
+    printf("enter the 2 nos");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("%d",c);
 }
 

@@ -7,19 +7,18 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+int fact(int x); //fun declaration
 int main()
 {
-    char ch;
-    scanf("%c",&ch);
-    if(ch>=65&&ch<=90)
-    printf("it is capital alphabets");
-    else if(ch>=97&&ch<=122)
-    printf("it is lower case alphabets");
-    else if(ch>=48&&ch<=57)
-    printf("it is a digit");
-    else
-    printf("it is special alphabet");
+    int n;
+    scanf("%d",&n);
+    printf("%d",fact(n));
     return 0;
 }
-
+int fact(int x)
+{
+    int i,f=1;
+    for(i=1;i<=x;i++)
+    f=f*i;
+    return f;
+}

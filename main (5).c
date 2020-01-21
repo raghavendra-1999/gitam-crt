@@ -7,19 +7,23 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+int large(int x);
 int main()
 {
-   int a,b,c;
-   printf("enter the values a,b,c");
-   scanf("%d%d%d",&a,&b,&c);
-   if(a>b&&a>c)
- printf("a is greater %d\n",a);
- else if(b>c)
- printf("c is greater %d\n",c);
- else
- printf("c is greater %d\n");
- 
+  int n;
+  scanf("%d",&n);
+  printf("%d",large(n));
     return 0;
 }
-
+int large(int x)
+{
+    int r,max=0;
+    while(x!=0)
+    {
+        r=x%10;
+        if(r>max)
+        max=r;
+        x=x/10;
+    }
+    return max;
+}

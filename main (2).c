@@ -7,17 +7,15 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+int add(int x,int y);
 int main()
 {
- int n;
- scanf("%d",&n);
- if(n>0)
- printf("it is positive");
- if(n<0)
- printf("it is negative");
- if(n==0)
- printf("it is zero");
-  return 0;
+ printf("%d",add(10,20));
+return 0;
+}
+int add(int x,int y)
+{
+
+    return (x+y);
 }
 

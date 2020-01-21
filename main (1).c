@@ -7,17 +7,19 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+int add();
 int main()
 {
- int n;
- scanf("%d",&n);
- if(n>0)
- printf("it is positive");
- if(n<0)
- printf("it is negative");
- if(n==0)
- printf("it is zero");
-  return 0;
+int c;
+ c=add();
+ printf("%d",c);
+return 0;
+}
+int add()
+{
+    int a,b,c;
+    printf("enter the 2 nos");
+    scanf("%d%d",&a,&b);
+    return (a+b);
 }
 

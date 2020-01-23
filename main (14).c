@@ -6,22 +6,36 @@ C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, S
 Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
-#include<stdio.h>  
-int main(){    
-int n,i,m=0,flag=0;    
-printf("Enter the number to check prime:");    
-scanf("%d",&n);    
-m=n/2;    
-for(i=2;i<=m;i++)    
-{    
-if(n%i==0)    
-{    
-printf("Number is not prime");    
-flag=1;    
-break;    
-}    
-}    
-if(flag==0)    
-printf("Number is prime");     
-return 0;  
- } 
+#include <stdio.h>
+int main()
+{
+    int r,c,a[10][10],b[10][10],i,j;
+    printf("enter the no of rows");
+    scanf("%d",&r);
+    printf("enter the no of columns");
+    scanf("%d",&c);
+    printf("enter the 1st matrix");
+    for(i=0;i<r;i++)
+    for(j=0;j<c;j++)
+    {
+    scanf("%d",&a[i][j]);
+    }
+    
+    printf("enter the 2nd matrix");
+    for(i=0;i<r;++i)
+    for(j=0;j<c;j++)
+    {
+    scanf("%d",&b[i][j]);
+    }
+    for(i=0;i<r;i++)
+    {
+    for(j=0;j<c;j++)
+    {
+    printf(" %d",a[i][j]*b[i][j]);
+    printf("\n");
+    }
+    }
+    return 0;
+    
+    }
+

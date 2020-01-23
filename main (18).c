@@ -7,15 +7,22 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
+#include<string.h>
+typedef struct
+{
+    char name[100];
+    int id;
+    float sal;
+}emp;
 int main()
 {
-    int i;
-for(i=0;i<=10;i++)
-{
-    if(i==5)
-    continue;
-    printf("%d",i);
-}
-return 0;
+    emp e;
+    strcpy(e.name,"ram");
+    e.id=1947;
+    e.sal=10000;
+    printf("\n emp details are \n");
+    printf("\n name is %s",e.name);
+    printf("\n id %d",e.id);
+    printf("\n salary ",e.sal);
+    return 0;
 }

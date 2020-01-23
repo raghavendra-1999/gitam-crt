@@ -6,19 +6,30 @@ C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, S
 Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
-#include<stdio.h>    
-int main()    
-{    
- int n1=0,n2=1,n3,i,number;    
- printf("Enter the number of elements:");    
- scanf("%d",&number);    
- printf("\n%d %d",n1,n2);    
- for(i=2;i<number;++i)  
- {    
-  n3=n1+n2;    
-  printf(" %d",n3);    
-  n1=n2;    
-  n2=n3;    
- }  
-  return 0;  
+#include <stdio.h>
+void printleader(int arr[],int n)
+{
+    int max=arr[n-1],i;
+    printf("%d",max);
+    for(i=n-1;i>=0;i++)
+    {
+        if(max<arr[i])
+        {
+            printf("%d",arr[i]);
+            max=arr[i];
+        }
+    }
 }
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n],i;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printleader(a,n);
+    return 0;
+}
+    

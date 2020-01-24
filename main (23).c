@@ -6,19 +6,29 @@ C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, S
 Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
-#include <stdio.h>
-
-int main()
-{
-    int a=10;
-    char b='a';
-    float c=12.56;
-    printf("\n size of(a)=%d",sizeof(a));
-    printf("\n size of(b)=%d",sizeof(b));
-    printf("\n size of(c)=%d",sizeof(c));
-    printf("\n size of(int)=%d",sizeof(int));
-    printf("\n size of(char)=%d",sizeof(char));
-    printf("\n size of(float)=%d",sizeof(float));
-    return 0;
-}
-
+#include<stdio.h>   
+void main ()  
+{  
+    int a[10] = {10, 23, 40, 1, 2, 0, 14, 13, 50, 9};  
+    int item, i,flag;  
+    printf("\nEnter Item which is to be searched\n");  
+    scanf("%d",&item);  
+    for (i = 0; i< 10; i++)  
+    {  
+        if(a[i] == item)   
+        {  
+            flag = i+1;  
+            break;  
+        }   
+        else   
+        flag = 0;  
+    }   
+    if(flag != 0)  
+    {  
+        printf("\nItem found at location %d\n",flag);  
+    }  
+    else  
+    {  
+        printf("\nItem not found\n");   
+    }  
+}   

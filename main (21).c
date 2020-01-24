@@ -1,8 +1,8 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
 Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
@@ -10,14 +10,12 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-   int year;
-   printf("enter the year");
-   scanf("%d",&year);
-   if(year%4==0 && year%100!=0 || year%400==0)
-    printf("it is a leap year %d",year);
-   else
-   printf("it is not a leap year %d");
+    int a=10,b=20;
+    printf("%\n a=%d & b=%d",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\n a=%d and b=%d",a,b);
     return 0;
 }
-
 
